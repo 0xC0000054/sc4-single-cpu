@@ -2,8 +2,10 @@
 
 A DLL Plugin for SimCity 4 that automatically makes the game run on a single CPU.  
 
-The plugin applies the single CPU fix if the `-CPUCount` command line argument was not specified.
-When the `-CPUCount` command line argument is present, the plugin will do nothing.
+The plugin will force the game to use a single CPU unless the user has added the `-CPUCount` command line argument.
+If the `-CPUCount` command line argument is present, the plugin will do nothing.
+This behavior is intended to allow the user to experiment with using more than 1 CPU, and prevent any issues that
+could be caused by both the plugin and the game trying to set the CPU count. 
  
 The plugin can be downloaded from the Releases tab: https://github.com/0xC0000054/sc4-single-cpu/releases
 
